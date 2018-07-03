@@ -1,9 +1,10 @@
 ---
 title:  "How to rollback EmberJS model relations"
-date: 2018-02-01
+date: 2018-01-01
 categories: EmberJS
 tags: emberjs
 ---
+
 ## Background
 EmberJS by default has `rollbackAttributes` method that rollbacks model attributes, but does nothing with its `belongsTo` and `hasMany` relations. Alos it applies to `changedAttribute` method that returns only model's changes attributes without relations.
 
