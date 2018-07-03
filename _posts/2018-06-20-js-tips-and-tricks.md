@@ -60,8 +60,8 @@ a.b = 2; // Error
 The best choise for developer that wants to create a readable and clean code is immutability. Utilities like `[...arr]` and `Object.assign({}, obj)` may help you do achieve this goal but this approach leads to extra CPU and memory consumption. So that the best choise it using more sophisticated structures like ones from [Immutable.js](https://github.com/facebook/immutable-js/issues). It introduces structures like `Map` and `List` that can help you in real immutability.
 
 ## Recursion
-Everybody knows about recursion and its side effects that touch call stack size and memory consumption. But there are a couple of techniques on the field that can elimitate them and make your code more readable and declarative:
-- [Proper Tail Calls (PTC)](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch8.md/#proper-tail-calls-ptc)
+Everybody knows about recursion and its side effects that touch call stack size and memory consumption. But there are a couple of techniques on the field that can elimitate them and make your code more readable and declarative.
+### [Proper Tail Calls (PTC)](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch8.md/#proper-tail-calls-ptc)
 These are not PTC:
 ```js
 foo();
@@ -79,7 +79,7 @@ However, this is PTC:
 return x ? foo( .. ) : bar( .. );
 ```
 
-- [Continuation Passing Style (CPS)](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch8.md/#continuation-passing-style-cps)
+### [Continuation Passing Style (CPS)](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch8.md/#continuation-passing-style-cps)
 
 ```js
 "use strict";
@@ -96,7 +96,7 @@ function fib(n,cont = identity) {
 }
 ```
 
-- [Trampolines](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch8.md/#trampolines)
+### [Trampolines](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch8.md/#trampolines)
 
 ```js
 function trampoline(fn) {
@@ -129,14 +129,14 @@ for (let i = 0; i < 20000; i++) {
 ## [True functional `filter()`](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch9.md/#filtering-confusion)
 The most interesting question about `filter()` is how _predicate_ function should be named? For example:
 ```js
-[1,2,3,4,5].filter( isOdd );
+[1, 2, 3, 4, 5].filter( isOdd );
 // and
-[1,2,3,4,5].filter( isEven );
+[1, 2, 3, 4, 5].filter( isEven );
 ```
 It is not clear what exactly we want to do with our input: _filter out_ or _filter in_, do we want to _GET_ or _SKIP_ some array elements. Functional programming patterns and most libraries promote next implementation:
 ```js
-filterIn( isOdd, [1,2,3,4,5] );         // [1,3,5]
-filterOut( isEven, [1,2,3,4,5] );       // [1,3,5]
+filterIn( isOdd, [1, 2, 3, 4, 5] );         // [1,3,5]
+filterOut( isEven, [1, 2, 3, 4, 5] );       // [1,3,5]
 ```
 > To clear up all this confusion, let's define a filterOut(..) that actually filters out values by internally negating the predicate check. While we're at it, we'll alias filterIn(..) to the existing filter(..):
 
