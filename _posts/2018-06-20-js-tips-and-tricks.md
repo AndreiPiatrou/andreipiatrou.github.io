@@ -72,11 +72,15 @@ return x;
 // or
 return 1 + foo( .. );
 ```
+
 However, this is PTC:
+
 ```js
 return x ? foo( .. ) : bar( .. );
 ```
+
 - [Continuation Passing Style (CPS)](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch8.md/#continuation-passing-style-cps)
+
 ```js
 "use strict";
 
@@ -91,7 +95,9 @@ function fib(n,cont = identity) {
     );
 }
 ```
+
 - [Trampolines](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch8.md/#trampolines)
+
 ```js
 function trampoline(fn) {
     return function trampolined(...args) {
@@ -115,7 +121,7 @@ var sum = trampoline(
 );
 
 var xs = [];
-for (let i=0; i<20000; i++) {
+for (let i = 0; i < 20000; i++) {
     xs.push( i );
 }
 ```
@@ -135,7 +141,7 @@ filterOut( isEven, [1,2,3,4,5] );       // [1,3,5]
 > To clear up all this confusion, let's define a filterOut(..) that actually filters out values by internally negating the predicate check. While we're at it, we'll alias filterIn(..) to the existing filter(..):
 
 ## [Fusion](https://github.com/getify/Functional-Light-JS/blob/master/manuscript/ch9.md/#fusion)
-Imagine we have some array `fiter/map` chain like this:
+Imagine we have some array `filter / map` chain like this:
 ```js
 someList
   .filter(..)
@@ -177,7 +183,9 @@ elide( upper( removeInvalidChars( "Mr." ) ) );
 elide( upper( removeInvalidChars( "responsible" ) ) );
 // "RESPONS..."
 ```
+
 You may already catched the point that we can `pipe` all this `map()` predicates with `pipe`, do not like `compose` personally, so let's do it with `pipe`:
+
 ```js
 words
 .map(
