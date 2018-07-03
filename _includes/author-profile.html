@@ -257,6 +257,14 @@
         </li>
       {% endif %}
 
+      {% if author.telegram %}
+        <li>
+          <a href="https://t.me/username/{{ author.telegram }}" itemprop="sameAs">
+            <i class="fab fa-fw fa-telegram" aria-hidden="true"></i> Telegram
+          </a>
+        </li>
+      {% endif %}
+
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
