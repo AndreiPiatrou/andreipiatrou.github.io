@@ -50,3 +50,8 @@ comments:
   provider: "disqus"
   disqus:
     shortname: "https-andreipiatrou-github-io"
+
+analytics:
+  provider: "google"
+  google:
+    tracking_id: UA-121799026-1
