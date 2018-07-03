@@ -45,3 +45,8 @@ defaults:
 
 include:
   - _pages
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "https-andreipiatrou-github-io"
