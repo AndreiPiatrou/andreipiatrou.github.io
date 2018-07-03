@@ -1,8 +1,9 @@
 ---
-layout: post
 title:  "My VS code bundle"
-date:   2018-01-01
-categories: jekyll update
+description: "What VS Code extensions I usually use"
+date: 2018-01-01
+categories: VSCode
+tags: vscode
 ---
 ## VS Code
 Usually you want to use something fast, functional and especially free text editor for code/markdown/text editing. There are a lot of options such as [Atom][link_atom], [Sublime Text][link_sublime_text] and [Brackets][link_brackets], but for now I prefer to use [VS Code][link_vs_code]. It is designed to be extensible through different plugins and themes to fit any requirement that you may have and at the same time community actively creates and supports a huge amount of these plugins and here is my plugins bundle:
