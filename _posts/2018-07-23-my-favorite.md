@@ -1,6 +1,6 @@
 ---
 title: "My favorite"
-date: 2018-06-01
+date: 2018-07-23
 categories: Books
 tags: best-practices
 ---
