@@ -34,6 +34,7 @@ tags: best-practices
 - Марвин Карлинс, Джо Наварро, "Я вижу, о чём вы думаете"
 - Дейв Грей, "Лиминальное мышление: Как перейти границы своих убеждений"
 - ["Functional-Light JS"](https://github.com/getify/Functional-Light-JS)
+- "97 этюдов для архитекторов программных систем"
 
 [link_dev_zen]: http://devzen.ru/
 [link_razbor_poletov]: http://razbor-poletov.com/
@@ -46,5 +47,5 @@ tags: best-practices
 [link_art_of_unit_testing]: https://www.amazon.com/Art-Unit-Testing-examples/dp/1617290890
 [link_you_dont_know_js]: https://github.com/getify/You-Dont-Know-JS
 [link_teplyakov]: https://oz.by/books/more10428344.html
-[link_eo_vol2]: https://www.amazon.com/Elegant-Objects-2-Yegor-Bugayenko/dp/1534908307 
+[link_eo_vol2]: https://www.amazon.com/Elegant-Objects-2-Yegor-Bugayenko/dp/1534908307
 
