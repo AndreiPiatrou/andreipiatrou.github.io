@@ -35,7 +35,7 @@ tags: best-practices
 - Дейв Грей, "Лиминальное мышление: Как перейти границы своих убеждений"
 - ["Functional-Light JS"](https://github.com/getify/Functional-Light-JS)
 - "97 этюдов для архитекторов программных систем"
-- [The Twelve-Factor App](https://12factor.net)
+- ["The Twelve-Factor App"](https://12factor.net)
 
 [link_dev_zen]: http://devzen.ru/
 [link_razbor_poletov]: http://razbor-poletov.com/
