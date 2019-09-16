@@ -7,7 +7,7 @@ tags: best-practices
 
 ## Podcasts
 - [DevZen][link_dev_zen]
-- [Shift-M][link_shift_m]
+- [yegor256][link_shift_m]
 - [JS Podcast](https://devchat.tv/js-jabber)
 - [Disgusting men][link_disgusting_men]
 - [Разбор полетов][link_razbor_poletov]
@@ -26,7 +26,7 @@ tags: best-practices
 - [Сергей Тепляков, "Паттерны проектирования"][link_teplyakov]
 - [Yegor Bugaenko, "Elegant Objects (vol 2)"][link_eo_vol2], (my [short review](eo-vol2-review.md) of this book)
 - Юваль Ной Харари, "Sapiens: краткая история человечества"
-- Айн Рэнд, "Антант расправил плечи"
+- Айн Рэнд, "Атлант расправил плечи"
 - Теодор Драйзер, "Трилогия желания"
 - Людмила Ярухина, "Финансы для нефинансистов"
 - Ричард Талер и Касс Санстейн, "Nudge архитектура выбора"
