@@ -1,6 +1,6 @@
 ---
 title: "How I understand technical interviews"
-date: 2019-09-16
+date: 2019-10-29
 categories: Practices
 tags: best-practices
 ---
@@ -21,7 +21,7 @@ For a candidate these goals are:
 - understand the opportunity on how the candidate could bring the value and apply his/her ambitions against company realities and goals
 
 For a company they are:
-- understand candidate's hard and sort skills
+- understand candidate's hard/sort skills and his/her mindset
 - understand how this level could be applied against the company needs
 - sell the company to a candidate as the place where he/she could be valuable and could grow as a pro
 
@@ -38,8 +38,8 @@ Usually a candidate:
 
 In its turn a company:
 - does not allow to tell a candidate his/her story
-- has a list of certain technical questions that does not reveal a real technical level of a candidate
-- positions a technical interview as a fight between two fighters where one attacks an the other responds to that attacks
+- has a list of certain technical questions that does not reveal a real technical level of a candidate and his/her mindset
+- poses a technical interview as a fight between two warriors where one attacks and the other responds to that attacks
 
 ## How I try to fix these issues as a technical expert
 
@@ -72,8 +72,8 @@ _*No. When a candidate indeed has something to say - he or she will do this and 
 ### Questions to do/don't ask
 
 The following questions usually do not help You:
-- theoretical questions that require certain definition: since certain definition does not show the understanding knowing them is pretty useless fact
-- tricky questions regarding programming language or platform: in case You are interested in tricky things and aspects, You expect ghat a candidate will write tricky code as well which is not the right expectation though
+- theoretical questions that require certain definition as an answer: having an understanding of something is much more valuable then knowing of a certain definition 
+- tricky questions regarding programming language or platform: in case You are interested in tricky things and aspects of language or platform, You expect that a candidate will write tricky code as well which is not the right expectation though
 - do not ask questions that require `yes/no` answer: such kind of questions could be guessed and require further clarification
 
 And the list that usually brings a valuable output is the following:
@@ -82,6 +82,7 @@ And the list that usually brings a valuable output is the following:
 
 ### Other do and don't
 
+- try to see the mindset but not a current set of knowledge because of knowledge is much easier to gain in comparison with mindset
 - know the company You are working on or looking talents for
 - know the resume, it shows that You are interested in a candidate and makes a conversation much more comfortable for both sides
 - if there is an ability to take a walk during your conversation - just do it
