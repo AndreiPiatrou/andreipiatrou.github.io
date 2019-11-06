@@ -47,11 +47,15 @@ In its turn a company:
 
 Usually a technical expert has its own set of questions to ask candidate and this is the first and main mistake. When you as a technical expert starts with such list You reveal the area that is shown on the following picture:
 
-// TODO: add a picture
+<p align="center">
+  <img src="/assets/images/knowledge-1.png" alt="/knowledge-1" width="500"/>
+</p>
 
 But the overall goal is to discover the following area:
 
-// TODO: add a picture
+<p align="center">
+  <img src="/assets/images/knowledge-2.png" alt="/knowledge-2" width="500"/>
+</p>
 
 So the question is: _how can You get to that area?_
 
