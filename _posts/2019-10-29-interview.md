@@ -81,7 +81,8 @@ The following questions usually do not help You:
 - do not ask questions that require `yes/no` answer: such kind of questions could be guessed and require further clarification
 
 And the list that usually brings a valuable output is the following:
-- solve regular coding tasks from the field, for example: `map/filter/reduce` tasks, basic DB schema with all kinds of relations and so on. It helps to understand that candidate has basic experience from real world in a couple of minutes. 
+- solve regular coding tasks from the field, for example: `map/filter/reduce` tasks, basic DB schema creation with all kinds of relations and so on. It helps to understand that candidate has basic experience from real world in a couple of minutes.
+- propose a piece of code for refactoring or code review. Usually, it gives quick feedback on a very wide variety of aspects of coding skills
 - ask questions that reveal a mindset and a way of thinking rather than on knowing certain language/framework API: such kind of knowledge is much more useful and applicable
 
 ### Other do and don't
