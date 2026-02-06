@@ -39,12 +39,18 @@ Example frontmatter:
 ---
 title: "Your Post Title"
 date: 2024-01-01
-categories: Technology
+description: "A brief preview of your post that appears on the homepage"
 tags: javascript
 ---
 
 Your content here...
 ```
+
+**Frontmatter fields:**
+- `title` (required): The post title
+- `date` (required): Publication date
+- `description` (optional): Short preview text shown on the homepage
+- `tags` (optional): Single tag or array of tags
 
 ## 🚢 Deployment
 
