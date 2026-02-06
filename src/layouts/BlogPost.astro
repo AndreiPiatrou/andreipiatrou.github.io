@@ -1,0 +1,135 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  date: Date;
+  tags?: string | string[];
+}
+
+const { title, date, tags } = Astro.props;
+
+const formattedDate = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+}).format(date);
+
+const tagArray = Array.isArray(tags) ? tags : (tags ? [tags] : []);
+---
+
+<BaseLayout title={title}>
+  <div class="container">
+    <header class="site-header">
+      <h1 class="site-title"><a href="/">Engineer's blog</a></h1>
+    </header>
+
+    <article class="post">
+      <header class="post-header">
+        <h1 class="post-title">{title}</h1>
+        <div class="post-meta">
+          <time datetime={date.toISOString()}>{formattedDate}</time>
+        </div>
+        {tagArray.length > 0 && (
+          <div class="post-tags">
+            {tagArray.map(tag => <span class="tag">{tag}</span>)}
+          </div>
+        )}
+      </header>
+
+      <div class="post-content">
+        <slot />
+      </div>
+
+      <footer class="post-footer">
+        <a href="/" class="back-link">← Back to all posts</a>
+      </footer>
+    </article>
+  </div>
+
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    .site-header {
+      margin-bottom: 3rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .site-title {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .site-title a {
+      border: none;
+    }
+
+    .post {
+      margin-bottom: 3rem;
+    }
+
+    .post-header {
+      margin-bottom: 2rem;
+    }
+
+    .post-title {
+      margin: 0 0 0.5rem;
+      font-size: 2.5rem;
+    }
+
+    .post-meta {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .post-tags {
+      margin-top: 0.75rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      background-color: var(--code-bg);
+      padding: 0.25rem 0.75rem;
+      border-radius: 3px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .post-content {
+      margin: 2rem 0;
+    }
+
+    .post-footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .back-link {
+      color: var(--text-muted);
+      border: none;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover {
+      color: var(--accent-color);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1.5rem 1rem;
+      }
+
+      .post-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</BaseLayout>
