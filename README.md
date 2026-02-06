@@ -54,11 +54,26 @@ Your content here...
 
 ## 🚢 Deployment
 
-This site is configured to deploy to GitHub Pages. The build output is in the `docs/` folder.
+This site is deployed to GitHub Pages using GitHub Actions.
 
-1. Build the site: `npm run build`
-2. Commit the `docs/` folder
-3. Configure GitHub Pages to serve from the `docs/` folder in repository settings
+### Automatic Deployment
+
+Every push to the `master` branch automatically triggers a build and deployment:
+1. GitHub Actions runs `npm ci` and `npm run build`
+2. The built site is deployed to GitHub Pages
+3. Site is live at `https://andreipiatrou.github.io`
+
+### GitHub Pages Setup
+
+1. Go to repository Settings → Pages
+2. Under "Build and deployment":
+   - Source: **GitHub Actions**
+3. The workflow will automatically deploy on the next push to `master`
+
+### Manual Deployment
+
+You can also trigger a deployment manually:
+- Go to Actions tab → Deploy to GitHub Pages → Run workflow
 
 ## 🎨 Theme
 

@@ -3,6 +3,8 @@ node_modules/
 
 # Build output
 .astro/
+dist/
+docs/
 
 # macOS
 .DS_Store
