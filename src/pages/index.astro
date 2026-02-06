@@ -25,7 +25,6 @@ const formatDate = (date: Date) => {
       <div class="posts">
         {sortedPosts.map(post => {
           const slug = post.id.replace('.md', '');
-          const tagArray = Array.isArray(post.data.tags) ? post.data.tags : (post.data.tags ? [post.data.tags] : []);
           return (
             <article class="post-item">
               <time class="post-date" datetime={post.data.date.toISOString()}>
@@ -37,9 +36,9 @@ const formatDate = (date: Date) => {
               {post.data.description && (
                 <p class="post-preview">{post.data.description}</p>
               )}
-              {tagArray.length > 0 && (
+              {post.data.tags && post.data.tags.length > 0 && (
                 <div class="post-tags">
-                  {tagArray.map(tag => <span class="tag">{tag}</span>)}
+                  {post.data.tags.map(tag => <span class="tag">{tag}</span>)}
                 </div>
               )}
             </article>

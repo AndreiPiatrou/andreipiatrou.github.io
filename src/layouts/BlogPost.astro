@@ -4,7 +4,7 @@ import BaseLayout from './BaseLayout.astro';
 interface Props {
   title: string;
   date: Date;
-  tags?: string | string[];
+  tags?: string[];
 }
 
 const { title, date, tags } = Astro.props;
@@ -14,8 +14,6 @@ const formattedDate = new Intl.DateTimeFormat('en-US', {
   month: 'long',
   day: 'numeric'
 }).format(date);
-
-const tagArray = Array.isArray(tags) ? tags : (tags ? [tags] : []);
 ---
 
 <BaseLayout title={title}>
@@ -30,9 +28,9 @@ const tagArray = Array.isArray(tags) ? tags : (tags ? [tags] : []);
         <div class="post-meta">
           <time datetime={date.toISOString()}>{formattedDate}</time>
         </div>
-        {tagArray.length > 0 && (
+        {tags && tags.length > 0 && (
           <div class="post-tags">
-            {tagArray.map(tag => <span class="tag">{tag}</span>)}
+            {tags.map(tag => <span class="tag">{tag}</span>)}
           </div>
         )}
       </header>
